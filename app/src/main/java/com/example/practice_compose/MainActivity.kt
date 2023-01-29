@@ -26,13 +26,14 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
+            DefaultPreview()
         }
     }
 }
 
 
 @Composable
-fun CreateTodo(navController: NavHostController= rememberNavController()){
+fun CreateTodo(){
     val context = LocalContext.current
 
     Box(contentAlignment = Alignment.BottomCenter , modifier = Modifier.fillMaxSize()){
